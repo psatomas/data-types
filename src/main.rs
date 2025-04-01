@@ -1,10 +1,15 @@
 fn main() {
-    let miles_away = 50;
-    let miles_away_i8 = miles_away as i8;
-    let miles_away_u8 = miles_away as u8;
+    let addition = 5 + 4;
+    let subtraction = 10 - 6;
+    let multiplication = 3 * 4;
+    println!("Addition: {addition}, subtraction: {subtraction}, multiplication: {multiplication}");
 
-    let miles_away = 100.329032;
-    let miles_away_f32 = miles_away as f32;
-    let miles_away_int = miles_away as i32;
-    println!("{miles_away_int}");
+    let floor_division = 5 / 3;
+    println!("{floor_division}");
+
+    let decimal_division = 5.0 / 3.0;
+    println!("{decimal_division}");
+
+    let remainder = 7 % 2;
+    println!("{remainder}");
 }
