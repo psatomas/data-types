@@ -1,8 +1,11 @@
 fn main() {
-    let mut year = 2025;
-    year += 1;
-    println!("The new year is {year}");
+    let is_hansome = true;
+    let is_silly: bool = false;
 
-    year -= 2;
-    println!("Last year was {year}")
+    println!("handsome: {is_handsome}. Silly: {is_silly");
+
+    let age: i32 = -40;
+    let is_young = age < 35;
+    println!("{is_young}");
+    println!("{} {}", age.is_positive(), age.is_negative())
 }
