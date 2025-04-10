@@ -1,22 +1,19 @@
 fn main() {
-    let month_days = 1..31;
-    println!("{month_days:?}");
+    let distance: i32 = 1_337;
+    let miles = distance as i16;
 
-    let month_days = 1..=31;
-    println!("{month_days:?}");
+    let height = 150.34546;
+    println!("{height:.3}");
 
-    for number in month_days {
-        println!("{number}");
-    }
+    let with_milk = true;
+    let with_sugar = true;
 
-    let letters = 'b'..'f';
+    let is_my_type_of_coffe = with_milk && with_sugar;
+    let is_acceptable_coffe = with_milk || with_sugar;
 
-    for letter in letters {
-        println!("{letter}");
-    }
-    let colors = ["Red", "Green", "Yellow"];
+    let distances: [i8; 4] = [13, 23, 75, 100];
+    println!("{distances:#?}");
 
-    for color in colors {
-        println!("{color} is a great color!")
-    }
+    let combo = (miles, height, is_my_type_of_coffe, distances);
+    println!("{combo:#?}")
 }
